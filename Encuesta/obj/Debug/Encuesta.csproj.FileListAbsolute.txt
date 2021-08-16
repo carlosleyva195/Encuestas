@@ -5,10 +5,9 @@ C:\Users\Programador\source\repos\Encuesta\Encuesta\bin\Debug\MaterialSkin.dll
 C:\Users\Programador\source\repos\Encuesta\Encuesta\bin\Debug\MetroFramework.Design.dll
 C:\Users\Programador\source\repos\Encuesta\Encuesta\bin\Debug\MetroFramework.dll
 C:\Users\Programador\source\repos\Encuesta\Encuesta\bin\Debug\MetroFramework.Fonts.dll
-C:\Users\Programador\source\repos\Encuesta\Encuesta\obj\Debug\Encuesta.csprojResolveAssemblyReference.cache
 C:\Users\Programador\source\repos\Encuesta\Encuesta\obj\Debug\Encuesta.Form1.resources
+C:\Users\Programador\source\repos\Encuesta\Encuesta\obj\Debug\Encuesta.Preguntas.resources
 C:\Users\Programador\source\repos\Encuesta\Encuesta\obj\Debug\Encuesta.Properties.Resources.resources
 C:\Users\Programador\source\repos\Encuesta\Encuesta\obj\Debug\Encuesta.csproj.GenerateResource.Cache
 C:\Users\Programador\source\repos\Encuesta\Encuesta\obj\Debug\Encuesta.exe
 C:\Users\Programador\source\repos\Encuesta\Encuesta\obj\Debug\Encuesta.pdb
-C:\Users\Programador\source\repos\Encuesta\Encuesta\obj\Debug\Encuesta.Preguntas.resources

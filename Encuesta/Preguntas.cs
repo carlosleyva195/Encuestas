@@ -35,6 +35,7 @@ namespace Encuesta
             );
 
             label8.Text = Form1.NombreCliente;
+            label11.Text = Form1.NSucursal;
 
             //VERDE
             btn_Guardar.BackColor = ColorTranslator.FromHtml("#76CA62");
@@ -61,8 +62,8 @@ namespace Encuesta
         {
             try
             {
-                string sql = "insert into encuestas ([IdDocumento],[Nombre],[Sucursal],[Telefono1],[Telefono2],[SerieDocumento],[Folio],[IdAlmacen],[CodCliente],[Fecha],[Pregunta1],[Pregunta2],[Pregunta3],[Pregunta4],[Pregunta5],[Comentario], [Llamada])" +
-                                                    "values (@IdDocumento,@Nombre,@Sucursal,@Telefono1,@Telefono2,@SerieDocumento,@Folio,@IdAlmacen,@CodCliente,@Fecha,@Pregunta1,@Pregunta2,@Pregunta3,@Pregunta4,@Pregunta5,@Comentario,@Llamada)";
+                string sql = "insert into encuestas ([IdDocumento],[Nombre],[Sucursal],[Telefono1],[Telefono2],[SerieDocumento],[Folio],[IdAlmacen],[CodCliente],[Fecha],[Pregunta1],[Pregunta2],[Pregunta3],[Comentario], [Contesto])" +
+                                                    "values (@IdDocumento,@Nombre,@Sucursal,@Telefono1,@Telefono2,@SerieDocumento,@Folio,@IdAlmacen,@CodCliente,@Fecha,@Pregunta1,@Pregunta2,@Pregunta3,@Comentario,@Contesto)";
                 SqlCommand cmd = new SqlCommand(sql, EncuestaConection);
 
                 cmd.Parameters.AddWithValue("@IdDocumento", Form1.IDocumento);
@@ -78,10 +79,10 @@ namespace Encuesta
                 cmd.Parameters.AddWithValue("@Pregunta1", Pregunta1.Text);
                 cmd.Parameters.AddWithValue("@Pregunta2", Pregunta2.Text);
                 cmd.Parameters.AddWithValue("@Pregunta3", Pregunta3.Text);
-                cmd.Parameters.AddWithValue("@Pregunta4", Pregunta4.Text);
-                cmd.Parameters.AddWithValue("@Pregunta5", Pregunta5.Text);
+                //cmd.Parameters.AddWithValue("@Pregunta4", Pregunta4.Text);
+                //cmd.Parameters.AddWithValue("@Pregunta5", Pregunta5.Text);
                 cmd.Parameters.AddWithValue("@Comentario", Observacion.Text);
-                cmd.Parameters.AddWithValue("@Llamada" , "Si");
+                cmd.Parameters.AddWithValue("@Contesto", "Si");
 
                 EncuestaConection.Open();
                 cmd.ExecuteNonQuery();
@@ -106,8 +107,8 @@ namespace Encuesta
         {
             try
             {
-                string sql = "insert into encuestas ([IdDocumento],[Nombre],[Sucursal],[Telefono1],[Telefono2],[SerieDocumento],[Folio],[IdAlmacen],[CodCliente],[Fecha],[Pregunta1],[Pregunta2],[Pregunta3],[Pregunta4],[Pregunta5],[Comentario], [Contesto])" +
-                                                    "values (@IdDocumento,@Nombre,@Sucursal,@Telefono1,@Telefono2,@SerieDocumento,@Folio,@IdAlmacen,@CodCliente,@Fecha,@Pregunta1,@Pregunta2,@Pregunta3,@Pregunta4,@Pregunta5,@Comentario,@Contesto)";
+                string sql = "insert into encuestas ([IdDocumento],[Nombre],[Sucursal],[Telefono1],[Telefono2],[SerieDocumento],[Folio],[IdAlmacen],[CodCliente],[Fecha],[Pregunta1],[Pregunta2],[Pregunta3],[Comentario], [Contesto])" +
+                                                    "values (@IdDocumento,@Nombre,@Sucursal,@Telefono1,@Telefono2,@SerieDocumento,@Folio,@IdAlmacen,@CodCliente,@Fecha,@Pregunta1,@Pregunta2,@Pregunta3,@Comentario,@Contesto)";
                 SqlCommand cmd = new SqlCommand(sql, EncuestaConection);
 
                 cmd.Parameters.AddWithValue("@IdDocumento", Form1.IDocumento);
@@ -123,8 +124,8 @@ namespace Encuesta
                 cmd.Parameters.AddWithValue("@Pregunta1", "");
                 cmd.Parameters.AddWithValue("@Pregunta2", "");
                 cmd.Parameters.AddWithValue("@Pregunta3", "");
-                cmd.Parameters.AddWithValue("@Pregunta4", "");
-                cmd.Parameters.AddWithValue("@Pregunta5", "");
+                //cmd.Parameters.AddWithValue("@Pregunta4", "");
+                //cmd.Parameters.AddWithValue("@Pregunta5", "");
                 cmd.Parameters.AddWithValue("@Comentario", "");
                 cmd.Parameters.AddWithValue("@Contesto", "No");
 

@@ -43,9 +43,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.Pregunta2 = new MetroFramework.Controls.MetroComboBox();
             this.Pregunta3 = new MetroFramework.Controls.MetroComboBox();
-            this.Pregunta4 = new MetroFramework.Controls.MetroComboBox();
-            this.Pregunta5 = new MetroFramework.Controls.MetroComboBox();
             this.btn_Contestar = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_salir
@@ -56,7 +56,7 @@
             this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_salir.ForeColor = System.Drawing.Color.White;
-            this.btn_salir.Location = new System.Drawing.Point(499, 596);
+            this.btn_salir.Location = new System.Drawing.Point(499, 527);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(114, 35);
             this.btn_salir.TabIndex = 91;
@@ -72,7 +72,7 @@
             this.btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Guardar.ForeColor = System.Drawing.Color.White;
-            this.btn_Guardar.Location = new System.Drawing.Point(93, 596);
+            this.btn_Guardar.Location = new System.Drawing.Point(93, 527);
             this.btn_Guardar.Name = "btn_Guardar";
             this.btn_Guardar.Size = new System.Drawing.Size(114, 35);
             this.btn_Guardar.TabIndex = 90;
@@ -99,7 +99,7 @@
             "Malo",
             "Regular",
             "Bueno"});
-            this.Pregunta1.Location = new System.Drawing.Point(614, 206);
+            this.Pregunta1.Location = new System.Drawing.Point(614, 224);
             this.Pregunta1.Name = "Pregunta1";
             this.Pregunta1.Size = new System.Drawing.Size(137, 29);
             this.Pregunta1.TabIndex = 93;
@@ -110,7 +110,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(138, 441);
+            this.label2.Location = new System.Drawing.Point(138, 372);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(438, 23);
             this.label2.TabIndex = 95;
@@ -118,7 +118,7 @@
             // 
             // Observacion
             // 
-            this.Observacion.Location = new System.Drawing.Point(96, 482);
+            this.Observacion.Location = new System.Drawing.Point(96, 413);
             this.Observacion.Multiline = true;
             this.Observacion.Name = "Observacion";
             this.Observacion.Size = new System.Drawing.Size(520, 88);
@@ -129,22 +129,22 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(63, 202);
+            this.label3.Location = new System.Drawing.Point(63, 230);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(514, 23);
+            this.label3.Size = new System.Drawing.Size(357, 23);
             this.label3.TabIndex = 97;
-            this.label3.Text = "1.- Cómo calificarías tu experiencia general de nuestro servicio?";
+            this.label3.Text = "1.- Como lo atendieron en nuestra sucursal?";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(63, 250);
+            this.label4.Location = new System.Drawing.Point(63, 278);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(513, 23);
+            this.label4.Size = new System.Drawing.Size(321, 23);
             this.label4.TabIndex = 98;
-            this.label4.Text = "2.- Cómo calificarías tu experiancia general de nuestro servicio?";
+            this.label4.Text = "2.- Qué le parecieron nuestros precios?";
             // 
             // label5
             // 
@@ -153,20 +153,19 @@
             this.label5.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(63, 345);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(513, 23);
+            this.label5.Size = new System.Drawing.Size(0, 23);
             this.label5.TabIndex = 99;
-            this.label5.Text = "4.- Cómo calificarías tu experiancia general de nuestro servicio?";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(63, 298);
+            this.label6.Location = new System.Drawing.Point(63, 326);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(513, 23);
+            this.label6.Size = new System.Drawing.Size(378, 23);
             this.label6.TabIndex = 100;
-            this.label6.Text = "3.- Cómo calificarías tu experiancia general de nuestro servicio?";
+            this.label6.Text = "3.- Qué le parecio nuestro servicio en general?";
             // 
             // label7
             // 
@@ -175,9 +174,8 @@
             this.label7.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(63, 390);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(513, 23);
+            this.label7.Size = new System.Drawing.Size(0, 23);
             this.label7.TabIndex = 101;
-            this.label7.Text = "5.- Cómo calificarías tu experiancia general de nuestro servicio?";
             // 
             // label8
             // 
@@ -208,7 +206,7 @@
             "Malo",
             "Regular",
             "Bueno"});
-            this.Pregunta2.Location = new System.Drawing.Point(614, 254);
+            this.Pregunta2.Location = new System.Drawing.Point(614, 272);
             this.Pregunta2.Name = "Pregunta2";
             this.Pregunta2.Size = new System.Drawing.Size(137, 29);
             this.Pregunta2.TabIndex = 105;
@@ -222,39 +220,11 @@
             "Malo",
             "Regular",
             "Bueno"});
-            this.Pregunta3.Location = new System.Drawing.Point(614, 302);
+            this.Pregunta3.Location = new System.Drawing.Point(614, 320);
             this.Pregunta3.Name = "Pregunta3";
             this.Pregunta3.Size = new System.Drawing.Size(137, 29);
             this.Pregunta3.TabIndex = 106;
             this.Pregunta3.UseSelectable = true;
-            // 
-            // Pregunta4
-            // 
-            this.Pregunta4.FormattingEnabled = true;
-            this.Pregunta4.ItemHeight = 23;
-            this.Pregunta4.Items.AddRange(new object[] {
-            "Malo",
-            "Regular",
-            "Bueno"});
-            this.Pregunta4.Location = new System.Drawing.Point(614, 349);
-            this.Pregunta4.Name = "Pregunta4";
-            this.Pregunta4.Size = new System.Drawing.Size(137, 29);
-            this.Pregunta4.TabIndex = 107;
-            this.Pregunta4.UseSelectable = true;
-            // 
-            // Pregunta5
-            // 
-            this.Pregunta5.FormattingEnabled = true;
-            this.Pregunta5.ItemHeight = 23;
-            this.Pregunta5.Items.AddRange(new object[] {
-            "Malo",
-            "Regular",
-            "Bueno"});
-            this.Pregunta5.Location = new System.Drawing.Point(614, 394);
-            this.Pregunta5.Name = "Pregunta5";
-            this.Pregunta5.Size = new System.Drawing.Size(137, 29);
-            this.Pregunta5.TabIndex = 108;
-            this.Pregunta5.UseSelectable = true;
             // 
             // btn_Contestar
             // 
@@ -272,14 +242,35 @@
             this.btn_Contestar.UseVisualStyleBackColor = false;
             this.btn_Contestar.Click += new System.EventHandler(this.btn_Contestar_Click);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(63, 189);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(81, 23);
+            this.label10.TabIndex = 110;
+            this.label10.Text = "Sucursal:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(150, 195);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(54, 17);
+            this.label11.TabIndex = 111;
+            this.label11.Text = "label11";
+            // 
             // Preguntas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(802, 654);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.btn_Contestar);
-            this.Controls.Add(this.Pregunta5);
-            this.Controls.Add(this.Pregunta4);
             this.Controls.Add(this.Pregunta3);
             this.Controls.Add(this.Pregunta2);
             this.Controls.Add(this.label9);
@@ -321,8 +312,8 @@
         private System.Windows.Forms.Label label9;
         private MetroFramework.Controls.MetroComboBox Pregunta2;
         private MetroFramework.Controls.MetroComboBox Pregunta3;
-        private MetroFramework.Controls.MetroComboBox Pregunta4;
-        private MetroFramework.Controls.MetroComboBox Pregunta5;
         private System.Windows.Forms.Button btn_Contestar;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }

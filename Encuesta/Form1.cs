@@ -56,8 +56,6 @@ namespace Encuesta
             //ROJO
             btn_salir.BackColor = ColorTranslator.FromHtml("#D66F6F");
 
-            //AZUL
-            //button6.BackColor = ColorTranslator.FromHtml("#6DADA6");
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -67,23 +65,23 @@ namespace Encuesta
 
         private void cargarGrid()
         {
-            SqlCommand cmd = new SqlCommand(@"SELECT doc.CIDDOCUMENTO, doc.CSERIEDOCUMENTO, doc.CFOLIO, doc.CFECHA, doc.CRAZONSOCIAL, 
-                                                dom.ctelefono1, dom.ctelefono2, mov.cidalmacen, folio.sucnom, cli.CCODIGOCLIENTE
-                                                from admDocumentos as doc
-                                                INNER JOIN admDomicilios as dom ON doc.CIDDOCUMENTO = dom.CIDCATALOGO
-                                                INNER JOIN admMovimientos as mov ON doc.CIDDOCUMENTO = mov.cidDocumento
-                                                INNER JOIN ReportesAMSA.dbo.folios as folio ON mov.CIDALMACEN = folio.idalmacen
-                                                INNER JOIN admClientes as cli ON  doc.CIDCLIENTEPROVEEDOR = cli.CIDCLIENTEPROVEEDOR
-                                                where doc.CIDDOCUMENTODE = 4 and dom.ctipocatalogo = 3 and dom.CTIPODIRECCION = 0 and doc.ccancelado = 0
-                                                and len(CTELEFONO1)! = 0
-                                                and doc.CFECHA = cast(DATEADD(DAY, -1, GETDATE()) as date)
-                                                group by doc.CIDDOCUMENTO, doc.CSERIEDOCUMENTO, doc.CFOLIO, doc.CFECHA, doc.CRAZONSOCIAL,
-                                                dom.ctelefono1, dom.ctelefono2, mov.cidalmacen, folio.sucnom, cli.CCODIGOCLIENTE", ConectionCompac);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            //SqlCommand cmd = new SqlCommand(@"SELECT doc.CIDDOCUMENTO, doc.CSERIEDOCUMENTO, doc.CFOLIO, doc.CFECHA, doc.CRAZONSOCIAL, 
+            //                                    dom.ctelefono1, dom.ctelefono2, mov.cidalmacen, folio.sucnom, cli.CCODIGOCLIENTE
+            //                                    from admDocumentos as doc
+            //                                    INNER JOIN admDomicilios as dom ON doc.CIDDOCUMENTO = dom.CIDCATALOGO
+            //                                    INNER JOIN admMovimientos as mov ON doc.CIDDOCUMENTO = mov.cidDocumento
+            //                                    INNER JOIN ReportesAMSA.dbo.folios as folio ON mov.CIDALMACEN = folio.idalmacen
+            //                                    INNER JOIN admClientes as cli ON  doc.CIDCLIENTEPROVEEDOR = cli.CIDCLIENTEPROVEEDOR
+            //                                    where doc.CIDDOCUMENTODE = 4 and dom.ctipocatalogo = 3 and dom.CTIPODIRECCION = 0 and doc.ccancelado = 0
+            //                                    and len(CTELEFONO1)! = 0
+            //                                    and doc.CFECHA = cast(DATEADD(DAY, -1, GETDATE()) as date)
+            //                                    group by doc.CIDDOCUMENTO, doc.CSERIEDOCUMENTO, doc.CFOLIO, doc.CFECHA, doc.CRAZONSOCIAL,
+            //                                    dom.ctelefono1, dom.ctelefono2, mov.cidalmacen, folio.sucnom, cli.CCODIGOCLIENTE", ConectionCompac);
+            //SqlDataAdapter da = new SqlDataAdapter(cmd);
 
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
-            ConectionCompac.Close();
+            //da.Fill(dt);
+            //dataGridView1.DataSource = dt;
+            //ConectionCompac.Close();
         }
 
         private void LlenaCombo()
@@ -160,7 +158,7 @@ namespace Encuesta
                                                 INNER JOIN admClientes as cli ON  doc.CIDCLIENTEPROVEEDOR = cli.CIDCLIENTEPROVEEDOR
                                                 where doc.CIDDOCUMENTODE = 4 and dom.ctipocatalogo = 3 and dom.CTIPODIRECCION = 0 and doc.ccancelado = 0
                                                 and len (CTELEFONO1)! = 0
-                                                and doc.CFECHA = cast(DATEADD(DAY,-1,GETDATE())as date)
+                                                and doc.CFECHA = cast(DATEADD(DAY,-3,GETDATE())as date)
                                                 and idalmacen = '" + metroComboBox1.SelectedValue.ToString() + @"'
                                                 and doc.CIDCLIENTEPROVEEDOR NOT IN (SELECT DOC.CIDCLIENTEPROVEEDOR FROM ReportesAmsa.dbo.ENCUESTAS 
                                                 INNER JOIN ADAMSACONTPAQI.DBO.ADMDOCUMENTOS AS DOC
